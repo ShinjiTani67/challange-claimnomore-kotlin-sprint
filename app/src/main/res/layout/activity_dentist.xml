@@ -7,4 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".Dentist">
 
+    <TextView
+        android:id="@+id/dentista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:text="Dentista"
+        android:textSize="45sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="35dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

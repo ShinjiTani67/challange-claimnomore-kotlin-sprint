@@ -9,16 +9,6 @@
 
 
     <TextView
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jost"
-        android:text="login"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="373dp" />
-
-    <TextView
         android:id="@+id/logo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,4 +27,43 @@
         android:textSize="60sp"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="51dp" />
+
+    <Button
+        android:id="@+id/usuario"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/jost"
+        android:text="usuário"
+        app:iconPadding="5dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <Button
+        android:id="@+id/entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:text="entrar"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="674dp" />
+
+    <Button
+        android:id="@+id/senha"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/jost"
+        android:text="senha"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="608dp" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:text="login"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="434dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
