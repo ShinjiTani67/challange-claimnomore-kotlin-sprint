@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Challangesprint01claimnomore"
         tools:targetApi="31">
         <activity
+            android:name=".NotaFiscal"
+            android:exported="false" />
+        <activity
+            android:name=".Agenda"
+            android:exported="false" />
+        <activity
             android:name=".Dentist"
             android:exported="false" />
         <activity
