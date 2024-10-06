@@ -29,33 +29,27 @@
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="51dp" />
 
-    <Button
-        android:id="@+id/usuario"
-        android:layout_width="341dp"
-        android:layout_height="41dp"
-        android:fontFamily="@font/jost"
-        android:text="Usuário"
-        app:iconPadding="5dp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="425dp">
     <EditText
+        android:id="@+id/usuario"
         android:hint="Usuário"
         android:textSize="20sp"
+        android:fontFamily="@font/jost"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
         android:background="@drawable/rounded_conner"
         android:inputType="text"/>
+
     <EditText
-        android:hint="Senha"
-        android:textSize="20sp"
-        android:background="@drawable/rounded_conner"
-        android:inputType="text"/>
-    <Button
         android:id="@+id/senha"
         android:layout_width="341dp"
         android:layout_height="41dp"
+        android:hint="Senha"
+        android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
-        android:text="senha"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="493dp" />
+        android:inputType="text"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="365dp" />
 
     <TextView
         android:id="@+id/login"
