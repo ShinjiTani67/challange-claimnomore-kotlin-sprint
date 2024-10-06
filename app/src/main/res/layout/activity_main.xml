@@ -41,7 +41,13 @@
     <EditText
         android:hint="Usuário"
         android:textSize="20sp"
-        android:background="@drawable/rounded_conner"/>
+        android:background="@drawable/rounded_conner"
+        android:inputType="text"/>
+    <EditText
+        android:hint="Senha"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_conner"
+        android:inputType="text"/>
     <Button
         android:id="@+id/senha"
         android:layout_width="341dp"
