@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
 
+
     <TextView
         android:id="@+id/logo2"
         android:layout_width="wrap_content"
@@ -33,20 +34,14 @@
         android:layout_width="341dp"
         android:layout_height="41dp"
         android:fontFamily="@font/jost"
-        android:text="usuário"
+        android:text="Usuário"
         app:iconPadding="5dp"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="540dp" />
-
-    <Button
-        android:id="@+id/entrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jost"
-        android:text="entrar"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="674dp" />
-
+        tools:layout_editor_absoluteY="425dp">
+    <EditText
+        android:hint="Usuário"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_conner"/>
     <Button
         android:id="@+id/senha"
         android:layout_width="341dp"
@@ -54,7 +49,7 @@
         android:fontFamily="@font/jost"
         android:text="senha"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="608dp" />
+        tools:layout_editor_absoluteY="493dp" />
 
     <TextView
         android:id="@+id/login"
@@ -64,6 +59,15 @@
         android:text="login"
         android:textSize="40sp"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="434dp" />
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:text="entrar"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="559dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
