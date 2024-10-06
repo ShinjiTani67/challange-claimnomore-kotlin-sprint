@@ -20,7 +20,7 @@
     <Button
         android:id="@+id/Agenda"
         android:layout_width="359dp"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:text="Agenda"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="264dp" />
@@ -28,7 +28,7 @@
     <Button
         android:id="@+id/cliente"
         android:layout_width="359dp"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:text="Cliente"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="196dp" />
@@ -44,7 +44,7 @@
     <Button
         android:id="@+id/Suporte"
         android:layout_width="359dp"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:text="Suporte"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="330dp" />

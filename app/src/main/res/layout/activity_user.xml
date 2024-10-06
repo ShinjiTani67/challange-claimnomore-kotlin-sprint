@@ -7,6 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".User">
 
+    <Button
+        android:id="@+id/dentistasparceiros"
+        android:layout_width="359dp"
+        android:layout_height="46dp"
+        android:text="Dentistas Parceiros"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <Button
+        android:id="@+id/sinistro"
+        android:layout_width="359dp"
+        android:layout_height="46dp"
+        android:text="Sinistro"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="183dp" />
+
     <TextView
         android:id="@+id/funcionario"
         android:layout_width="wrap_content"
@@ -15,37 +31,22 @@
         android:text="Funcionário"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="39dp" />
 
     <Button
         android:id="@+id/notafiscal2"
         android:layout_width="359dp"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:text="Nota Fiscal"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="83dp" />
-
-    <Button
-        android:id="@+id/dentistasparceiros"
-        android:layout_width="359dp"
-        android:layout_height="wrap_content"
-        android:text="Dentistas Parceiros"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="255dp" />
+        tools:layout_editor_absoluteY="106dp" />
 
     <Button
         android:id="@+id/falsosinistro"
         android:layout_width="359dp"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:text="Falso Sinistro"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="200dp" />
+        tools:layout_editor_absoluteY="257dp" />
 
-    <Button
-        android:id="@+id/sinistro"
-        android:layout_width="359dp"
-        android:layout_height="wrap_content"
-        android:text="Sinistro"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="145dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
