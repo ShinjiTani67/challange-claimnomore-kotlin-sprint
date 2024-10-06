@@ -39,7 +39,8 @@
         android:layout_height="46dp"
         android:text="Nota Fiscal"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="120dp" />
+        tools:layout_editor_absoluteY="120dp"
+        android:onClick="open_activity_nota_fiscal" />
 
     <Button
         android:id="@+id/Suporte"

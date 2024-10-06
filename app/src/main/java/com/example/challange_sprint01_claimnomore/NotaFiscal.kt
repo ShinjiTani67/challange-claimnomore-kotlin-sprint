@@ -16,5 +16,8 @@ class NotaFiscal : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        public void open_activity_nota_fiscal(View view){
+            startActivity(new Intent(this, activity_dentist.class));
+        }
     }
 }
