@@ -18,34 +18,34 @@
         tools:layout_editor_absoluteY="35dp" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
+        android:id="@+id/Agenda"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Agenda"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="264dp" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:id="@+id/cliente"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Cliente"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="196dp" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:id="@+id/notafiscal"
+        android:layout_width="359dp"
+        android:layout_height="46dp"
+        android:text="Nota Fiscal"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="120dp" />
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
+        android:id="@+id/Suporte"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Suporte"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="330dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
