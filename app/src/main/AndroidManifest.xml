@@ -14,9 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Challangesprint01claimnomore"
         tools:targetApi="31">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NotaFiscal" />
+
         <activity
             android:name=".NotaFiscal"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
         <activity
             android:name=".Agenda"
             android:exported="false" />
