@@ -14,13 +14,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Challangesprint01claimnomore"
         tools:targetApi="31">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
         <activity android:name=".NotaFiscal" />
+        <activity android:name=".User" />
+        <activity android:name=".Dentist" />
+        <activity android:name=".Agenda" />
 
         <activity
             android:name=".NotaFiscal"

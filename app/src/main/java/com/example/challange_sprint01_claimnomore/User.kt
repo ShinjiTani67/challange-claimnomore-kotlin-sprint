@@ -10,11 +10,10 @@ import androidx.core.view.WindowInsetsCompat
 class User : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user)
-
-        val textViewDisplay = findViewById<TextView>(R.id.textViewDisplay)
-
-        val inputText = intent.getStringExtra("inputText")
-        textViewDisplay.text = inputText ?: "Nada recebido"
+        setContent{
+            IntentsAndIntentFiltersTheme{
+                Text(text = "Funcionários")
+            }
         }
     }
+}

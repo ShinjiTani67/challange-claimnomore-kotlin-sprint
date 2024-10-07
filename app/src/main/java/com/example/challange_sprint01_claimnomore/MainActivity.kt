@@ -4,26 +4,30 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
+        Button(
+            onClick = {
+                Intent(applicationContext, User::class.java).also {
+                    startActivity(it)
+                }
+            }
+        )
         val editTextInput = findViewById<EditText>(R.id.editTextInput)
         val buttonNavigate = findViewById<Button>(R.id.entrarfuncionario)
 
     }
 
-    buttonNavigate.setOnClickListener {
-        val inputText = editTextInput.text.toString()
-        val intent = Intent(this, User::class.java)
-        intent.putExtra("inputText", inputText)
-        startActivity(intent)
+    private fun Button(onClick: () -> Intent) {
+        
     }
 }
