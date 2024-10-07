@@ -19,11 +19,11 @@ class MainActivity : AppCompatActivity() {
         val buttonNavigate = findViewById<Button>(R.id.entrarfuncionario)
 
     }
+
     buttonNavigate.setOnClickListener {
         val inputText = editTextInput.text.toString()
         val intent = Intent(this, User::class.java)
         intent.putExtra("inputText", inputText)
         startActivity(intent)
-
     }
 }
