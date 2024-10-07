@@ -9,12 +9,14 @@ import androidx.core.view.WindowInsetsCompat
 
 class Dentist : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user)
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_dentist)
 
-        val textViewDisplay = findViewById<TextView>(R.id.textViewDisplay)
+            val actionBar = supportActionBar
 
-        val inputText = intent.getStringExtra("inputText")
-        textViewDisplay.text = inputText ?: "Nada recebido"
+            if(actionBar != null){
+                actionBar.title = "Dentist"
+            }
+            actionBar!!.setDisplayHomeAsUpEnabled(true)
+        }
     }
-}

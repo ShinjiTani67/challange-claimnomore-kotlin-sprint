@@ -10,10 +10,13 @@ import androidx.core.view.WindowInsetsCompat
 class User : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent{
-            IntentsAndIntentFiltersTheme{
-                Text(text = "Funcionários")
-            }
+        setContentView(R.layout.activity_user)
+
+        val actionBar = supportActionBar
+
+        if(actionBar != null){
+            actionBar.title = "User"
         }
+        actionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 }

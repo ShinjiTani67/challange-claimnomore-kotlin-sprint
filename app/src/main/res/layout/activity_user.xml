@@ -13,7 +13,8 @@
         android:layout_height="46dp"
         android:text="Dentistas Parceiros"
         tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="328dp" />
+        tools:layout_editor_absoluteY="328dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/sinistro"
@@ -22,16 +23,6 @@
         android:text="Sinistro"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="183dp" />
-
-    <TextView
-        android:id="@+id/funcionario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/jost"
-        android:text="Funcionário"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="39dp" />
 
     <Button
         android:id="@+id/notafiscal2"
@@ -48,5 +39,14 @@
         android:text="Falso Sinistro"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="257dp" />
+
+    <TextView
+        android:id="@+id/funcionario"
+        android:layout_width="147dp"
+        android:layout_height="36dp"
+        android:fontFamily="@font/jost"
+        android:text="Funcionário"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

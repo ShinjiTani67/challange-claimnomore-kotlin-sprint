@@ -9,17 +9,14 @@ import androidx.core.view.WindowInsetsCompat
 
 class NotaFiscal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_nota_fiscal)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-        fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(R.layout.NotaFiscal)
+            setContentView(R.layout.activity_nota_fiscal)
+
+            val actionBar = supportActionBar
+
+            if(actionBar != null){
+                actionBar.title = "NotaFiscal"
+            }
+            actionBar!!.setDisplayHomeAsUpEnabled(true)
         }
     }
-}

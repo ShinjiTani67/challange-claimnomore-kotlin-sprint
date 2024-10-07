@@ -14,20 +14,13 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        Button(
-            onClick = {
-                Intent(applicationContext, User::class.java).also {
-                    startActivity(it)
-                }
-            }
-        )
-        val editTextInput = findViewById<EditText>(R.id.editTextInput)
-        val buttonNavigate = findViewById<Button>(R.id.entrarfuncionario)
-
-    }
-
-    private fun Button(onClick: () -> Intent) {
+        val entrarFuncionarioBtn: Button = findViewById (R.id.entrarFuncionarioBtn)
+        entrarFuncionarioBtn.setOnClickListener() {
+            val intent = Intent(this, User::class.java)
+            startActivity(intent)
+        }
 
     }
 }
