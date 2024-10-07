@@ -62,11 +62,20 @@
         tools:layout_editor_absoluteY="319dp" />
 
     <Button
-        android:id="@+id/entrar"
+        android:id="@+id/entrarfuncionario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/jost"
-        android:text="entrar"
+        android:text="entrar (funcionario)"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="559dp" />
+
+    <Button
+        android:id="@+id/entrardentista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:text="entrar (dentista)"
         tools:layout_editor_absoluteX="168dp"
         tools:layout_editor_absoluteY="559dp" />
 
