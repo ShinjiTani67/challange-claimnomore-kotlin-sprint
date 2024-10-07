@@ -11,11 +11,22 @@
         android:id="@+id/agenda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:fontFamily="@font/jost"
         android:text="Agenda"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="51dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/calendariofoto"
+        android:layout_width="279dp"
+        android:layout_height="559dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/calendario_foto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
