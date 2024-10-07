@@ -19,7 +19,7 @@ class NotaFiscal : AppCompatActivity() {
         }
         fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_second)
+            setContentView(R.layout.NotaFiscal)
         }
     }
 }

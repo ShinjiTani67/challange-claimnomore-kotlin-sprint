@@ -1,5 +1,6 @@
 package com.example.challange_sprint01_claimnomore
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -12,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button_open_second.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
+        entrarfuncionario.setOnClickListener {
+            val intent = Intent(this, activity_user::class.java)
             startActivity(intent)
         }
     }
