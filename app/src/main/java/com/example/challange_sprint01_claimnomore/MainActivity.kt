@@ -21,6 +21,12 @@ class MainActivity : ComponentActivity() {
         entrarFuncionarioBtn.setOnClickListener() {
             val intent = Intent(this, User::class.java)
             startActivity(intent)
+
+            val entrarDentistaBtn: Button = findViewById (R.id.entrarDentistaBtn)
+            entrarDentistaBtn.setOnClickListener() {
+                val intent = Intent(this, User::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
