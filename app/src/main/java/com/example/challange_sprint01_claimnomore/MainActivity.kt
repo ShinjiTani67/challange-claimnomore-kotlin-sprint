@@ -13,7 +13,6 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : ComponentActivity() {
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
