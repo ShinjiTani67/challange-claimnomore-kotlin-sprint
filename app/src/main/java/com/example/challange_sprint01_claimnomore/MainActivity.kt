@@ -28,6 +28,6 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun Button(onClick: () -> Intent) {
-        
+
     }
 }
