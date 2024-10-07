@@ -22,11 +22,5 @@ class MainActivity : ComponentActivity() {
             val intent = Intent(this, User::class.java)
             startActivity(intent)
         }
-
-        val entrarDentistaBtn: Button = findViewById (R.id.entrarDentistaBtn)
-        entrarDentistaBtn.setOnClickListener() {
-            val intent = Intent(this, Dentist::class.java)
-            startActivity(intent)
-        }
     }
 }
