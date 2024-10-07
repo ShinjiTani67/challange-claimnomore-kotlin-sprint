@@ -42,10 +42,11 @@
 
     <TextView
         android:id="@+id/funcionario"
-        android:layout_width="147dp"
-        android:layout_height="36dp"
+        android:layout_width="192dp"
+        android:layout_height="49dp"
         android:fontFamily="@font/jost"
         android:text="Funcionário"
+        android:textSize="36sp"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="16dp" />
 
