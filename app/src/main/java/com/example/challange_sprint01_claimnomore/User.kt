@@ -18,4 +18,3 @@ class User : AppCompatActivity() {
         textViewDisplay.text = inputText ?: "Nada recebido"
         }
     }
-}
