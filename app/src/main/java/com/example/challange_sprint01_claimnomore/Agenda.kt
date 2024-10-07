@@ -9,12 +9,13 @@ import androidx.core.view.WindowInsetsCompat
 class Agenda : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_agenda)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val actionBar = supportActionBar
+
+        if(actionBar != null){
+            actionBar.title = "Agenda"
         }
+        actionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 }
