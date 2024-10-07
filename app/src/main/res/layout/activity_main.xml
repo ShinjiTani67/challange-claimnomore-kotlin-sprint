@@ -12,72 +12,89 @@
         android:id="@+id/logo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:fontFamily="@font/jost"
         android:text="nomore"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="76dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/logo1"
         android:layout_width="180dp"
         android:layout_height="69dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/inria_serif"
         android:text="CLAIM"
         android:textSize="60sp"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="51dp" />
-
-    <EditText
-        android:id="@+id/usuario"
-        android:layout_width="341dp"
-        android:layout_height="41dp"
-        android:background="@drawable/rounded_conner"
-        android:fontFamily="@font/jost"
-        android:hint="Usuário"
-        android:inputType="text"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="336dp"
         android:fontFamily="@font/jost"
         android:text="login"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="300dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/entrarDentistaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="548dp"
         android:fontFamily="@font/jost"
         android:text="entrar (dentista)"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="609dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/entrarFuncionarioBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
         android:fontFamily="@font/jost"
         android:text="entrar (funcionario)"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="553dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/senha"
         android:layout_width="341dp"
         android:layout_height="41dp"
+        android:layout_marginTop="476dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
         android:hint="Senha"
         android:inputType="textPassword"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="472dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="412dp"
+        android:background="@drawable/rounded_conner"
+        android:fontFamily="@font/jost"
+        android:hint="Usuário"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

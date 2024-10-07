@@ -11,42 +11,54 @@
         android:id="@+id/dentista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/jost"
         android:text="Dentista"
         android:textSize="45sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="35dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Agenda"
         android:layout_width="359dp"
         android:layout_height="46dp"
+        android:layout_marginTop="340dp"
         android:text="Agenda"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="264dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/cliente"
         android:layout_width="359dp"
         android:layout_height="46dp"
+        android:layout_marginTop="260dp"
         android:text="Cliente"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/notafiscal"
         android:layout_width="359dp"
         android:layout_height="46dp"
+        android:layout_marginTop="188dp"
+        android:onClick="open_activity_nota_fiscal"
         android:text="Nota Fiscal"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="120dp"
-        android:onClick="open_activity_nota_fiscal" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Suporte"
         android:layout_width="359dp"
         android:layout_height="46dp"
+        android:layout_marginTop="412dp"
         android:text="Suporte"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
