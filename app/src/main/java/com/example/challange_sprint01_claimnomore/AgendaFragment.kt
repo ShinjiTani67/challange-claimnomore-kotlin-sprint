@@ -9,16 +9,23 @@ import android.view.ViewGroup
 
 class AgendaFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = AgendaFragment()
+    private var _binding: ResultProfileBinding? = null
+
+    private val binding get() = _binding!!
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        _binding = ResultProfileBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
-    private val viewModel: AgendaViewModel by viewModels()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        // TODO: Use the ViewModel
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     override fun onCreateView(
