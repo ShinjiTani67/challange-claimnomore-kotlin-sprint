@@ -1,15 +1,12 @@
 package com.example.challange_sprint01_claimnomore
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
+import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 
 class MainActivity : ComponentActivity() {
 
@@ -29,4 +26,32 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+    class MainActivity : AppCompatActivity(), AgendaFragment.OnFragmentInteractionListener {
+        fun onFragmentInteraction(message: String?) {
+            // Lida com a mensagem recebida do Fragment
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    class MainActivity : AppCompatActivity(), DentistaFragment.OnFragmentInteractionListener {
+        fun onFragmentInteraction(message: String?) {
+            // Lida com a mensagem recebida do Fragment
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    class MainActivity : AppCompatActivity(), NotaFiscalFragment.OnFragmentInteractionListener {
+        fun onFragmentInteraction(message: String?) {
+            // Lida com a mensagem recebida do Fragment
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    class MainActivity : AppCompatActivity(), UsuarioFragment.OnFragmentInteractionListener {
+        fun onFragmentInteraction(message: String?) {
+            // Lida com a mensagem recebida do Fragment
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        }
+    }
+
 }
