@@ -8,12 +8,11 @@ import android.view.ViewGroup
 
 class AgendaFragment : Fragment() {
 
-    private var _biding:AgendaFragmentBiding?= null
+    private var _biding:AgendaFragment?= null
     private val biding get() =_biding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
