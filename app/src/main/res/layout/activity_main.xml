@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/logo2"
         android:layout_width="wrap_content"
@@ -76,7 +75,7 @@
         android:layout_marginTop="476dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
-        android:hint="Senha"
+        android:hint="@string/senha_text"
         android:inputType="textPassword"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +89,7 @@
         android:layout_marginTop="412dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
-        android:hint="Usuário"
+        android:hint="@string/usuario_text"
         android:inputType="text"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
