@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="548dp"
         android:fontFamily="@font/jost"
-        android:text="entrar (dentista)"
+        android:text="@string/entrar_dentista"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="620dp"
         android:fontFamily="@font/jost"
-        android:text="entrar (funcionario)"
+        android:text="@string/entrar_funcionario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
