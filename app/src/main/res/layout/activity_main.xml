@@ -69,20 +69,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/senha"
-        android:layout_width="341dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="476dp"
-        android:background="@drawable/rounded_conner"
-        android:fontFamily="@font/jost"
-        android:hint="@string/senha_text"
-        android:inputType="textPassword"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/usuario"
         android:layout_width="341dp"
         android:layout_height="41dp"
@@ -91,6 +77,20 @@
         android:fontFamily="@font/jost"
         android:hint="@string/usuario_text"
         android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="476dp"
+        android:background="@drawable/rounded_conner"
+        android:fontFamily="@font/jost"
+        android:hint="@string/senha_text"
+        android:inputType="textPassword"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
