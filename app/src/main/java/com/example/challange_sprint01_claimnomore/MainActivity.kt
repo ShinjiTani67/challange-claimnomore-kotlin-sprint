@@ -16,12 +16,12 @@ class MainActivity : ComponentActivity() {
 
         val entrarFuncionarioBtn: Button = findViewById(R.id.entrarFuncionarioBtn)
         entrarFuncionarioBtn.setOnClickListener() {
-            val intent = Intent(this, User::class.java)
+            val intent = Intent(this, UsuarioFragment::class.java)
             startActivity(intent)
 
             val entrarDentistaBtn: Button = findViewById(R.id.entrarDentistaBtn)
             entrarDentistaBtn.setOnClickListener() {
-                val intent = Intent(this, User::class.java)
+                val intent = Intent(this, UsuarioFragment   ::class.java)
                 startActivity(intent)
             }
         }
