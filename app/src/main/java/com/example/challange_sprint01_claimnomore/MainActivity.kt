@@ -14,44 +14,20 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val entrarFuncionarioBtn: Button = findViewById (R.id.entrarFuncionarioBtn)
+        val entrarFuncionarioBtn: Button = findViewById(R.id.entrarFuncionarioBtn)
         entrarFuncionarioBtn.setOnClickListener() {
             val intent = Intent(this, User::class.java)
             startActivity(intent)
 
-            val entrarDentistaBtn: Button = findViewById (R.id.entrarDentistaBtn)
+            val entrarDentistaBtn: Button = findViewById(R.id.entrarDentistaBtn)
             entrarDentistaBtn.setOnClickListener() {
                 val intent = Intent(this, User::class.java)
                 startActivity(intent)
             }
         }
     }
-    class MainActivity : AppCompatActivity(), AgendaFragment.OnFragmentInteractionListener {
-        fun onFragmentInteraction(message: String?) {
-            // Lida com a mensagem recebida do Fragment
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        }
-    }
 
-    class MainActivity : AppCompatActivity(), DentistaFragment.OnFragmentInteractionListener {
-        fun onFragmentInteraction(message: String?) {
-            // Lida com a mensagem recebida do Fragment
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        }
-    }
 
-    class MainActivity : AppCompatActivity(), NotaFiscalFragment.OnFragmentInteractionListener {
-        fun onFragmentInteraction(message: String?) {
-            // Lida com a mensagem recebida do Fragment
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        }
-    }
 
-    class MainActivity : AppCompatActivity(), UsuarioFragment.OnFragmentInteractionListener {
-        fun onFragmentInteraction(message: String?) {
-            // Lida com a mensagem recebida do Fragment
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        }
-    }
 
 }
