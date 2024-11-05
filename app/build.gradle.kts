@@ -4,9 +4,11 @@ plugins {
 }
 
 android {
+
     buildFeatures{
         viewBinding = true
     }
+
     namespace = "com.example.challange_sprint01_claimnomore"
     compileSdk = 34
 

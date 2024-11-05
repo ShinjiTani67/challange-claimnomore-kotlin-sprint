@@ -7,22 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 
 class AgendaFragment : Fragment() {
-    private AgendaFragmentBiding biding;
 
-    @Override
-    public View onCreateView (LayoutInflater inflater, ViewGroup container,
-    Bundle savedInstanceState) {
+    private var _biding:AgendaFragmentBiding?= null
+    private val biding get() =_biding!!
 
-        var binding = FragmentExampleBinding.inflate(inflater, container, false);
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-        binding.fragmentTextView.setText("Texto atualizado no Fragment");
-
-        return binding.getRoot();
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        binding = null
     }
 
     override fun onCreateView(
@@ -31,4 +22,11 @@ class AgendaFragment : Fragment() {
     ): View {
         return inflater.inflate(R.layout.fragment_agenda, container, false)
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _biding = null
+    }
+
+
 }
