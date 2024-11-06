@@ -5,5 +5,28 @@
     android:layout_height="match_parent"
     tools:context=".UsuarioFragment">
 
+    <Button
+        android:id="@+id/notafiscal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notafiscal_button_text"/>
+
+    <Button
+        android:id="@+id/sinistro_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sinistro_button_text" />
+
+    <Button
+        android:id="@+id/sinistrofalso_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sinistrofalso_button_text" />
+
+    <Button
+        android:id="@+id/dentistasparceiros_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dentistasparceiros_button_text" />
 
 </FrameLayout>

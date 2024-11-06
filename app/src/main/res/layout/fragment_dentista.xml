@@ -6,5 +6,28 @@
     tools:context=".DentistaFragment">
 
 
+    <Button
+        android:id="@+id/notafiscal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notafiscal_button_text"/>
+
+    <Button
+        android:id="@+id/cliente_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cliente_button_text" />
+
+    <Button
+        android:id="@+id/agenda_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agenda_button_text" />
+
+    <Button
+        android:id="@+id/suporte_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suporte_button_text" />
 
 </FrameLayout>
