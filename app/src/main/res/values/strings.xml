@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">challange-sprint01-claimnomore</string>
+    <string name="app_name" translatable="false">challange-sprint01-claimnomore</string>
     <string name="login_button_text">Login</string>
-    <string name="claim_logo">CLAIM</string>
-    <string name="nomore_logo">nomore</string>
+    <string name="claim_logo" translatable="false">CLAIM</string>
+    <string name="nomore_logo" translatable="false">nomore</string>
     <string name="usuario_text">Usuário</string>
     <string name="senha_text">Senha</string>
     <string name="entrar_funcionario">entrar (funcionario)</string>
@@ -11,5 +11,11 @@
     <string name="funcao_text">Função</string>
     <string name="cpf_text">CPF</string>
     <string name="numero_text">Numero</string>
-    <string name="notafiscal_text">Nota Fiscal</string>
+    <string name="notafiscal_button_text">Nota Fiscal</string>
+    <string name="sinistro_button_text">Sinistro</string>
+    <string name="sinistrofalso_button_text">Sinistro Falso</string>
+    <string name="dentistasparceiros_button_text">Dentistas Parceiros</string>
+    <string name="cliente_button_text">Cliente</string>
+    <string name="agenda_button_text">Agenda</string>
+    <string name="suporte_button_text">Suporte</string>
 </resources>
