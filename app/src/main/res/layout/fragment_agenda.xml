@@ -5,6 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".AgendaFragment">
 
-
+    <Button
+        android:id="@+id/agenda_pagina_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agenda_button_text" />
 
 </FrameLayout>
