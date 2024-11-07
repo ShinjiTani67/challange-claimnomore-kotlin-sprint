@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "81782740891",
+    "firebase_url": "https://api-teste-andorid-default-rtdb.firebaseio.com",
+    "project_id": "api-teste-andorid",
+    "storage_bucket": "api-teste-andorid.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81782740891:android:5e837c9854e944f8c8733e",
+        "android_client_info": {
+          "package_name": "br.com.fiap.mad.marsrealestate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7-Phr4gkl5deVsrU6Aea5-F5IGD2FXkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81782740891:android:aadaa6ca2aa773c9c8733e",
+        "android_client_info": {
+          "package_name": "com.fiap.br.claimnommore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7-Phr4gkl5deVsrU6Aea5-F5IGD2FXkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
