@@ -1,33 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DentistaFragment">
+    tools:context=".DentistaFragment"
+    android:id="@+id/frameLayout3">
 
+    <TextView
+        android:id="@+id/dentista_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:text="@string/dentista_text"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="49dp" />
 
     <Button
         android:id="@+id/notafiscal_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/notafiscal_button_text"/>
+        android:layout_width="298dp"
+        android:layout_height="45dp"
+        android:text="@string/notafiscal_button_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="119dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="413dp" />
 
     <Button
         android:id="@+id/cliente_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cliente_button_text" />
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:text="@string/cliente_button_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="93dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="323dp" />
 
     <Button
         android:id="@+id/agenda_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/agenda_button_text" />
+        android:layout_width="296dp"
+        android:layout_height="49dp"
+        android:text="@string/agenda_button_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="98dp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="241dp" />
 
     <Button
         android:id="@+id/suporte_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/suporte_button_text" />
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:text="@string/suporte_button_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="99dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="166dp" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

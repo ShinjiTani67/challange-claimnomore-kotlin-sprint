@@ -1,55 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpFragment">
+    tools:context=".SignUpFragment"
+    android:id="@+id/frameLayout2">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:text="@string/signup_text"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="82dp" />
 
     <EditText
         android:id="@+id/nome"
         android:layout_width="341dp"
         android:layout_height="41dp"
-        android:layout_marginTop="412dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
         android:hint="@string/nome_text"
         android:inputType="text"
-        android:textSize="20sp"/>
-
-
-
-    <EditText
-        android:id="@+id/funcao"
-        android:layout_width="341dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="412dp"
-        android:background="@drawable/rounded_conner"
-        android:fontFamily="@font/jost"
-        android:hint="@string/funcao_text"
-        android:inputType="text"
-        android:textSize="20sp"/>
-
+        android:textSize="20sp"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="217dp" />
 
     <EditText
         android:id="@+id/cpf"
         android:layout_width="341dp"
         android:layout_height="41dp"
-        android:layout_marginTop="412dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
         android:hint="@string/cpf_text"
         android:inputType="text"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="394dp" />
 
+    <EditText
+        android:id="@+id/funcao"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:background="@drawable/rounded_conner"
+        android:fontFamily="@font/jost"
+        android:hint="@string/funcao_text"
+        android:inputType="text"
+        android:textSize="20sp"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="441dp" />
 
     <EditText
         android:id="@+id/numero"
         android:layout_width="341dp"
         android:layout_height="41dp"
-        android:layout_marginTop="412dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
         android:hint="@string/numero_text"
         android:inputType="text"
-        android:textSize="20sp" />
-</FrameLayout>
+        android:textSize="20sp"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <EditText
+        android:id="@+id/rg"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:background="@drawable/rounded_conner"
+        android:fontFamily="@font/jost"
+        android:hint="@string/endereco_text"
+        android:inputType="text"
+        android:textSize="20sp"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
