@@ -1,7 +1,9 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    id("com.google.gms.google-services") version "4.4.2" apply false
+    id("com.android.application")
+    id("com.google.gms.google-services")
+    apply plugin: 'com.google.gms.google-services'
 }
 
 android {
@@ -49,10 +51,10 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.fragment.ktx)
-    //implementation(platform(com.google.firebase:firebase-bom:33.5.1))
-    //implementation(com.google.firebase:firebase-analytics)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
+    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+    implementation(com.google.firebase:firebase-analytics:21.3.0)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
