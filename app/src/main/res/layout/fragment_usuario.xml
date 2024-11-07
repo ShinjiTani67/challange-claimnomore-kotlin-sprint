@@ -5,28 +5,54 @@
     android:layout_height="match_parent"
     tools:context=".UsuarioFragment">
 
-    <Button
-        android:id="@+id/notafiscal_btn"
+    <TextView
+        android:id="@+id/usuario_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/notafiscal_button_text"/>
+        android:fontFamily="@font/jost"
+        android:text="@string/usuario_text"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <Button
+        android:id="@+id/notafiscal_btn"
+        android:layout_width="298dp"
+        android:layout_height="45dp"
+        android:text="@string/notafiscal_button_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="119dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="413dp" />
 
     <Button
         android:id="@+id/sinistro_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sinistro_button_text" />
+        android:layout_width="295dp"
+        android:layout_height="45dp"
+        android:text="@string/sinistro_button_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="93dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="323dp" />
 
     <Button
         android:id="@+id/sinistrofalso_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sinistrofalso_button_text" />
+        android:layout_width="296dp"
+        android:layout_height="49dp"
+        android:text="@string/sinistrofalso_button_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="98dp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="241dp" />
 
     <Button
         android:id="@+id/dentistasparceiros_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dentistasparceiros_button_text" />
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:text="@string/dentistasparceiros_button_text"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="99dp"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="166dp" />
 
 </FrameLayout>

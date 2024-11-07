@@ -25,8 +25,7 @@
         tools:layout_conversion_absoluteHeight="24dp"
         tools:layout_conversion_absoluteWidth="24dp"
         tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="228dp" /><![CDATA[
+        tools:layout_editor_absoluteY="228dp" />
 
     />
-]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

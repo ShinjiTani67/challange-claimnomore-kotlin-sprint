@@ -12,12 +12,13 @@
     <string name="cpf_text">CPF</string>
     <string name="numero_text">Número</string>
     <string name="endereco_text">Endereço</string>
-    <string name="dentista_text">Dentista</string
+    <string name="dentista_text">Dentista</string>
     <string name="signup_text">Sign Up</string>
     <string name="notafiscal_button_text">Nota Fiscal</string>
     <string name="sinistro_button_text">Sinistro</string>
     <string name="sinistrofalso_button_text">Sinistro Falso</string>
     <string name="dentistasparceiros_button_text">Dentistas Parceiros</string>
+    <string name="entrar_button_text">Entrar</string>
     <string name="cliente_button_text">Cliente</string>
     <string name="agenda_button_text">Agenda</string>
     <string name="suporte_button_text">Suporte</string>
