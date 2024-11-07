@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "753972241366",
+    "project_id": "claim-nomore",
+    "storage_bucket": "claim-nomore.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753972241366:android:4f7b1dea1b082ed05b7a77",
+        "android_client_info": {
+          "package_name": "com.example.challange_sprint01_claimnomore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhj_jFt-a2KHDpK9CoVVVg40cSziP8Wyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
