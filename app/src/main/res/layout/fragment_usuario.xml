@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UsuarioFragment">
+    tools:context=".UsuarioFragment"
+    android:id="@+id/frameLayout5">
 
     <TextView
         android:id="@+id/usuario_title"
@@ -12,47 +13,49 @@
         android:fontFamily="@font/jost"
         android:text="@string/usuario_text"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="49dp" />
+        tools:layout_conversion_absoluteHeight="58dp"
+        tools:layout_conversion_absoluteWidth="127dp"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="33dp" />
 
     <Button
         android:id="@+id/notafiscal_btn"
         android:layout_width="298dp"
         android:layout_height="45dp"
         android:text="@string/notafiscal_button_text"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="119dp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="413dp" />
-
-    <Button
-        android:id="@+id/sinistro_btn"
-        android:layout_width="295dp"
-        android:layout_height="45dp"
-        android:text="@string/sinistro_button_text"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="93dp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="323dp" />
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="298dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="141dp" />
 
     <Button
         android:id="@+id/sinistrofalso_btn"
-        android:layout_width="296dp"
-        android:layout_height="49dp"
+        android:layout_width="298dp"
+        android:layout_height="45dp"
         android:text="@string/sinistrofalso_button_text"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="98dp"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="241dp" />
+        tools:layout_conversion_absoluteHeight="49dp"
+        tools:layout_conversion_absoluteWidth="296dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="289dp" />
 
     <Button
         android:id="@+id/dentistasparceiros_btn"
-        android:layout_width="299dp"
-        android:layout_height="48dp"
+        android:layout_width="294dp"
+        android:layout_height="46dp"
         android:text="@string/dentistasparceiros_button_text"
         tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="99dp"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="166dp" />
+        tools:layout_conversion_absoluteWidth="299dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="365dp" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/sinistro_btn"
+        android:layout_width="298dp"
+        android:layout_height="45dp"
+        android:text="@string/sinistro_button_text"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="295dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
