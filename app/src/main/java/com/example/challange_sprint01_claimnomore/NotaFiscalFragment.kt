@@ -1,5 +1,6 @@
 package com.example.challange_sprint01_claimnomore
 
+import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -11,8 +12,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
+import com.example.challange_sprint01_claimnomore.databinding.FragmentNotaFiscalBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 //import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.storage.storage
 import kotlinx.coroutines.launch
@@ -24,13 +27,15 @@ class NotaFiscalFragment : Fragment() {
 
 
     private lateinit var auth: FirebaseAuth
-    private var _binding:NotaFiscalFragment? = null
+    private var _binding: FragmentNotaFiscalBinding? = null
     private val binding get() =_binding!!
 
     private val storage = Firebase.storage
     private val firestore = Firebase.firestore
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        auth = Firebase.auth
     }
 
     override fun onCreateView(
@@ -38,10 +43,10 @@ class NotaFiscalFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        FragmentNotaFiscalBinding.inflate(inflater, container, false)
-    }
+        _binding = FragmentNotaFiscalBinding.inflate(inflater, container, false)
+        return binding.root
 
-    private var _binding: NotaFiscalFragment? = null
+    }
 
     private val pickImageLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK && result.data != null) {
