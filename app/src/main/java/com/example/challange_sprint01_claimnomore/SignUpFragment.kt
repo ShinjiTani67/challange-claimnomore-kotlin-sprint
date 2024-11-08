@@ -33,11 +33,43 @@ class SignUpFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _biding = SignUpFragmentBinding.inflate(inflater,container,false)
+        _biding = FragmentSignUpBinding.inflate(inflater, container, false)
 
         return binding.root
     }
 
+    private fun createAccount() {
+        val nome = binding.editTextName.text.toString()
+        val email = binding.editTextEmailAddress.text.toString()
+        val senha = binding.editTextPassword.text.toString()
+
+        lifecycleScope.launch {
+            try {
+                val result = auth.createUserWithEmailAndPassword(email, password).await()
+                val currentUser = result.user
+
+                if (currentUser != null) {
+                    val profileRequest = userProfileChangeRequest {
+                        displayName = name
+                    }
+                    currentUser.updateProfile(profileRequest).await()
+                    findNavController().navigate(R.id.homeFragment)
+                } else {
+                    Toast.makeText(
+                        requireContext(),
+                        "Não foi possível criar sua conta",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            } catch (ex: Exception) {
+                Toast.makeText(
+                    requireContext(),
+                    ex.message,
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+        }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

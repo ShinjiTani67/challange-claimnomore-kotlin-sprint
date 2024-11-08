@@ -22,6 +22,5 @@
     <string name="cliente_button_text">Cliente</string>
     <string name="agenda_button_text">Agenda</string>
     <string name="suporte_button_text">Suporte</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_button_text">Email</string>
 </resources>

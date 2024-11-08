@@ -1,19 +1,15 @@
 package com.example.challange_sprint01_claimnomore
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import androidx.navigation.fragment.findNavController
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 
-class LoginFragment : Fragment() {
+class HomeFragment : Fragment() {
     private lateinit var auth: FirebaseAuth
     private var _biding:UsuarioFragment? = null
     private val biding get() =_biding!!
