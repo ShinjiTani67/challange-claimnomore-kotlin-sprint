@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -25,7 +26,7 @@ class NotaFiscalFragment : Fragment() {
 
     private lateinit var auth: FirebaseAuth
     private var _biding:NotaFiscalFragment? = null
-    private val binding get() =_biding!!
+    private val binding get() =_binding!!
 
     private val storage = Firebase.storage
     private val firestore = Firebase.firestore
@@ -40,6 +41,22 @@ class NotaFiscalFragment : Fragment() {
 
         return inflater.inflate(R.layout.fragment_dentista, container, false)
     }
+
+    private var _binding: NotaFiscalFragment? = null
+
+
+
+    private val pickImageLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode == Activity.RESULT_OK && result.data != null) {
+            val imageUri = result.data?.data
+            if (imageUri != null) {
+                uploadImageToFirebase(imageUri)
+            }
+        } else {
+            Toast.makeText(requireContext(), "Falha ao selecionar imagem", Toast.LENGTH_SHORT).show()
+        }
+    }
+
     private fun selectImageFromGallery() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         pickImageLauncher.launch(intent)
@@ -71,7 +88,7 @@ class NotaFiscalFragment : Fragment() {
             }
         }
     }
-
+    
     override fun onDestroyView() {
         super.onDestroyView()
         _biding = null
