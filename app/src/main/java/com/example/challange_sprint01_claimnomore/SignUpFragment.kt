@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.example.challange_sprint01_claimnomore.databinding.FragmentSignUpBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -20,7 +21,7 @@ class SignUpFragment : Fragment() {
 
     private lateinit var auth: FirebaseAuth
     private var _biding: SignUpFragment? = null
-    private val biding get() = _biding!!
+    private val binding get() = _biding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -31,7 +32,10 @@ class SignUpFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_sign_up, container, false)
+
+        _biding = SignUpFragmentBinding.inflate(inflater,container,false)
+
+        return binding.root
     }
 
 

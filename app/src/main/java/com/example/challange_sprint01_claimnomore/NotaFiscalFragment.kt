@@ -10,7 +10,7 @@ import android.view.ViewGroup
 class NotaFiscalFragment : Fragment() {
 
     private var _biding:NotaFiscalFragment? = null
-    private val biding get() =_biding!!
+    private val binding get() =_biding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

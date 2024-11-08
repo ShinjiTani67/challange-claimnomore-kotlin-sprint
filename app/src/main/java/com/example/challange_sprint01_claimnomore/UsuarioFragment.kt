@@ -9,7 +9,7 @@ import android.view.ViewGroup
 class UsuarioFragment : Fragment() {
 
     private var _biding:UsuarioFragment? = null
-    private val biding get() =_biding!!
+    private val binding get() =_biding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

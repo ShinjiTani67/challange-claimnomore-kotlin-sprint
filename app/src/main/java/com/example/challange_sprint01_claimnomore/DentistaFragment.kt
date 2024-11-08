@@ -14,7 +14,7 @@ class DentistaFragment : Fragment() {
 
     private lateinit var auth: FirebaseAuth
     private var _biding:DentistaFragment? = null
-    private val biding get() =_biding!!
+    private val binding get() =_biding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
