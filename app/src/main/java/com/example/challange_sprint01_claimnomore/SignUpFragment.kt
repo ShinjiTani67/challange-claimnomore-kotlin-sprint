@@ -45,15 +45,16 @@ class SignUpFragment : Fragment() {
         val numero = binding.numero.toString()
         val email = binding.email.text.toString()
         val funcao = binding.funcao.text.toString()
+        val senha = binding.senha.text.toString()
 
         lifecycleScope.launch {
             try {
-                val result = auth.createUserWithEmailAndPassword(email, password).await()
+                val result = auth.createUserWithEmailAndPassword(email, senha).await()
                 val currentUser = result.user
 
                 if (currentUser != null) {
                     val profileRequest = userProfileChangeRequest {
-                        displayName = name
+                        displayName = nome
                     }
                     currentUser.updateProfile(profileRequest).await()
                     findNavController().navigate(R.id.homeFragment)
