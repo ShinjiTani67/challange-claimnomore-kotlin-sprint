@@ -12,26 +12,25 @@ import android.widget.EditText
 
 class LoginFragment : Fragment() {
 
+    private var _biding:UsuarioFragment? = null
+    private val biding get() =_biding!!
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
-
-
-
-    val usuarioEditText = findViewById<EditText>(R.id.usuario)
-    val senhaEditText = findViewById<EditText>(R.id.senha)
-    val entrarFuncionarioBtnButton = findViewById<Button>(R.id.entrarFuncionarioBtn) //somente para teste
-    val entrarDentistaBtnButton: Button = findViewById(R.id.entrarDentistaBtn) //somente para teste
-
-
-    entrarFuncionarioBtnButton.setOnClickListener() {
-        val intent = Intent(this, UsuarioFragment::class.java)
-        startActivity(intent)
+        super.onCreate(savedInstanceState)
     }
 
-    entrarDentistaBtnButton.setOnClickListener(){
-        val intent = Intent(this, DentistaFragment::class.java)
-        startActivity(intent)
-        }
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+
+        return inflater.inflate(R.layout.fragment_dentista, container, false)
+    }
+
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _biding = null
     }
 }
