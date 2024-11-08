@@ -11,116 +11,104 @@
         android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/jost"
         android:text="@string/signup_text"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="82dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nome"
         android:layout_width="341dp"
         android:layout_height="41dp"
+        android:layout_marginTop="132dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
         android:hint="@string/nome_text"
         android:inputType="text"
         android:textSize="20sp"
-        tools:layout_conversion_absoluteHeight="41dp"
-        tools:layout_conversion_absoluteWidth="341dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="217dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp" />
 
     <EditText
         android:id="@+id/cpf"
         android:layout_width="341dp"
         android:layout_height="41dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
         android:hint="@string/cpf_text"
         android:inputType="text"
         android:textSize="20sp"
-        tools:layout_conversion_absoluteHeight="41dp"
-        tools:layout_conversion_absoluteWidth="341dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="394dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <EditText
-        android:id="@+id/funcao"
-        android:layout_width="341dp"
-        android:layout_height="41dp"
-        android:background="@drawable/rounded_conner"
-        android:fontFamily="@font/jost"
-        android:hint="@string/funcao_text"
-        android:inputType="text"
-        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="41dp"
-        tools:layout_conversion_absoluteWidth="341dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="441dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <EditText
-        android:id="@+id/numero"
-        android:layout_width="341dp"
-        android:layout_height="41dp"
-        android:background="@drawable/rounded_conner"
-        android:fontFamily="@font/jost"
-        android:hint="@string/numero_text"
-        android:inputType="text"
-        android:textSize="20sp"
-        tools:layout_conversion_absoluteHeight="41dp"
-        tools:layout_conversion_absoluteWidth="341dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="328dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        tools:layout_conversion_absoluteWidth="341dp" />
 
     <EditText
         android:id="@+id/rg"
         android:layout_width="341dp"
         android:layout_height="41dp"
+        android:layout_marginTop="460dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
         android:hint="@string/endereco_text"
         android:inputType="text"
         android:textSize="20sp"
-        tools:layout_conversion_absoluteHeight="41dp"
-        tools:layout_conversion_absoluteWidth="341dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="268dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="384dp"
+        android:background="@drawable/rounded_conner"
+        android:fontFamily="@font/jost"
+        android:hint="@string/numero_text"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp" />
+
+    <EditText
+        android:id="@+id/funcao"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/rounded_conner"
+        android:fontFamily="@font/jost"
+        android:hint="@string/funcao_text"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp" />
 
     <Button
         android:id="@+id/EntrarBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="560dp"
         android:text="@string/entrar_button_text"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="534dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

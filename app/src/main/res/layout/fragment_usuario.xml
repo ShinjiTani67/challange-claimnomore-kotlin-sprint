@@ -11,73 +11,67 @@
         android:id="@+id/usuario_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:fontFamily="@font/jost"
         android:text="@string/usuario_text"
         android:textSize="40sp"
-        tools:layout_conversion_absoluteHeight="58dp"
-        tools:layout_conversion_absoluteWidth="127dp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="33dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintHorizontal_bias="0.183"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="58dp"
+        tools:layout_conversion_absoluteWidth="127dp" />
 
     <Button
         android:id="@+id/notafiscal_btn"
         android:layout_width="298dp"
         android:layout_height="45dp"
+        android:layout_marginTop="156dp"
         android:text="@string/notafiscal_button_text"
-        tools:layout_conversion_absoluteHeight="45dp"
-        tools:layout_conversion_absoluteWidth="298dp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="141dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="298dp" />
 
     <Button
         android:id="@+id/sinistrofalso_btn"
         android:layout_width="298dp"
         android:layout_height="45dp"
+        android:layout_marginTop="248dp"
         android:text="@string/sinistrofalso_button_text"
-        tools:layout_conversion_absoluteHeight="49dp"
-        tools:layout_conversion_absoluteWidth="296dp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="289dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="49dp"
+        tools:layout_conversion_absoluteWidth="296dp" />
 
     <Button
         android:id="@+id/dentistasparceiros_btn"
         android:layout_width="294dp"
         android:layout_height="46dp"
+        android:layout_marginTop="416dp"
         android:text="@string/dentistasparceiros_button_text"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="299dp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="365dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="299dp" />
 
     <Button
         android:id="@+id/sinistro_btn"
         android:layout_width="298dp"
         android:layout_height="45dp"
+        android:layout_marginTop="332dp"
         android:text="@string/sinistro_button_text"
-        tools:layout_conversion_absoluteHeight="45dp"
-        tools:layout_conversion_absoluteWidth="295dp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="215dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="45dp"
+        tools:layout_conversion_absoluteWidth="295dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
