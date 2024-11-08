@@ -33,13 +33,11 @@ class SignUpFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _biding = FragmentSignUpBinding.inflate(inflater, container, false)
-
-        return binding.root
+        return inflater.inflate(R.layout.fragment_sign_up, container, false)
     }
 
     private fun createAccount() {
-        
+
         val nome = binding.nomeEditText.text.toString()
         val rg = binding.enderecoEditText.text.toString()
         val cpf = binding.cpfEditText.text.toString()
