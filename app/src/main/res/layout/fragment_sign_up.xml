@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SignUpFragment"
     android:id="@+id/frameLayout2">
 
@@ -14,7 +15,11 @@
         android:text="@string/signup_text"
         android:textSize="40sp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="82dp" />
+        tools:layout_editor_absoluteY="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/nome"
@@ -28,7 +33,11 @@
         tools:layout_conversion_absoluteHeight="41dp"
         tools:layout_conversion_absoluteWidth="341dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="217dp" />
+        tools:layout_editor_absoluteY="217dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/cpf"
@@ -42,7 +51,11 @@
         tools:layout_conversion_absoluteHeight="41dp"
         tools:layout_conversion_absoluteWidth="341dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="394dp" />
+        tools:layout_editor_absoluteY="394dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/funcao"
@@ -56,7 +69,11 @@
         tools:layout_conversion_absoluteHeight="41dp"
         tools:layout_conversion_absoluteWidth="341dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="441dp" />
+        tools:layout_editor_absoluteY="441dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/numero"
@@ -70,7 +87,11 @@
         tools:layout_conversion_absoluteHeight="41dp"
         tools:layout_conversion_absoluteWidth="341dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="328dp" />
+        tools:layout_editor_absoluteY="328dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/rg"
@@ -84,7 +105,11 @@
         tools:layout_conversion_absoluteHeight="41dp"
         tools:layout_conversion_absoluteWidth="341dp"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="268dp" />
+        tools:layout_editor_absoluteY="268dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/EntrarBtn"
@@ -92,6 +117,10 @@
         android:layout_height="wrap_content"
         android:text="@string/entrar_button_text"
         tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="534dp" />
+        tools:layout_editor_absoluteY="534dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
