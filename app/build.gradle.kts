@@ -1,22 +1,18 @@
+import org.jetbrains.kotlin.utils.addToStdlib.safeAs
+
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
-    id("com.android.application")
-    id("com.google.gms.google-services")
-    apply plugin: 'com.google.gms.google-services'
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.androidx.navigation.safeargs.kotlin)
+    alias(libs.plugins.gms.google.services)
 }
 
 android {
-
-    buildFeatures{
-        viewBinding = true
-    }
-
-    namespace = "com.example.challange_sprint01_claimnomore"
+    namespace = "br.com.fiap.mad.marsrealestate"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.challange_sprint01_claimnomore"
+        applicationId = "br.com.fiap.mad.marsrealestate"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -24,11 +20,16 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -47,14 +48,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.legacy.support.v4)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.androidx.navigation.ui)
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
+    implementation(libs.glide)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
-    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
-    implementation(com.google.firebase:firebase-analytics:21.3.0)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
