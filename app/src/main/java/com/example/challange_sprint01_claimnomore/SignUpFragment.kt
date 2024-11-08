@@ -38,7 +38,7 @@ class SignUpFragment : Fragment() {
 
     private fun createAccount() {
 
-        val nome = binding.nomeEditText.text.toString()
+        val nome = binding.EditTextnomeEditText.text.toString()
         val rg = binding.enderecoEditText.text.toString()
         val cpf = binding.cpfEditText.text.toString()
         val numero = binding.numeroEditText.toString()
