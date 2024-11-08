@@ -7,6 +7,4 @@
     tools:context=".AgendaFragment"
     android:id="@+id/frameLayout4">
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
