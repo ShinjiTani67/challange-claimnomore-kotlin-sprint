@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.example.challange_sprint01_claimnomore.databinding.FragmentHomeBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -16,12 +17,12 @@ import kotlinx.coroutines.tasks.await
 
 class HomeFragment : Fragment() {
     private lateinit var auth: FirebaseAuth
-    private var _biding:UsuarioFragment? = null
-    private val binding get() =_biding!!
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() =_binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        auth = Firebase.auth
+        auth = FirebaseAuth.getInstance()
     }
     private fun doLogin() = lifecycleScope.launch {
         val email = binding.editTextEmailAddress.text.toString()
@@ -37,7 +38,7 @@ class HomeFragment : Fragment() {
                     "Olá ${currentUser.displayName}!",
                     Toast.LENGTH_LONG
                 ).show()
-                findNavController().navigate(R.id.homeFragment)
+                findNavController().navigate(R.id.UsuarioFragment)
             } else {
                 Toast.makeText(
                     requireContext(),
@@ -56,13 +57,14 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
 
-        return inflater.inflate(R.layout.fragment_dentista, container, false)
+    ): View? {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _biding = null
+        _binding = null
     }
 }
