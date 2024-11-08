@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -27,6 +28,12 @@ class DentistaFragment : Fragment() {
     ): View? {
 
         return inflater.inflate(R.layout.fragment_dentista, container, false)
+    }
+
+    val notaFiscalBtn: Button = findViewById (R.id.notafiscal_btn)
+    entrarDentistaBtn.setOnClickListener() {
+        val intent = Intent(this, User::class.java)
+        startFragment(intent)
     }
 
     override fun onDestroyView() {

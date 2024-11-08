@@ -27,37 +27,11 @@
         android:layout_marginTop="156dp"
         android:text="@string/notafiscal_button_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="119dp" />
-
-    <Button
-        android:id="@+id/agenda_btn"
-        android:layout_width="296dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="252dp"
-        android:text="@string/agenda_button_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="98dp" />
-
-    <Button
-        android:id="@+id/suporte_btn"
-        android:layout_width="299dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="476dp"
-        android:text="@string/suporte_button_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.357"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_conversion_absoluteHeight="48dp"
-        tools:layout_conversion_absoluteWidth="99dp" />
 
     <Button
         android:id="@+id/cliente_btn"
@@ -66,10 +40,36 @@
         android:layout_marginTop="364dp"
         android:text="@string/cliente_button_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="93dp" />
+
+    <Button
+        android:id="@+id/suporte_btn"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="476dp"
+        android:text="@string/suporte_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="99dp" />
+
+    <Button
+        android:id="@+id/agenda_btn"
+        android:layout_width="296dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="268dp"
+        android:text="@string/agenda_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="98dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

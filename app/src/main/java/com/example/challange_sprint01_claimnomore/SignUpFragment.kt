@@ -38,13 +38,13 @@ class SignUpFragment : Fragment() {
 
     private fun createAccount() {
 
-        val nome = binding.EditTextnomeEditText.text.toString()
-        val rg = binding.enderecoEditText.text.toString()
-        val cpf = binding.cpfEditText.text.toString()
-        val numero = binding.numeroEditText.toString()
-        val email = binding.emailEditText.text.toString()
-        val funcao = binding.funcaoEditText.text.toString()
-        val senha = binding.senhaEditText.text.toString()
+        val nome = binding.(R.id.nomeEditText).text.toString()
+        val rg = binding.(R.id.enderecoEditText).text.toString()
+        val cpf = binding.(R.id.cpfEditText).text.toString()
+        val numero = binding.(R.id.numeroEditText).toString()
+        val email = binding.(R.id.emailEditText).text.toString()
+        val funcao = binding.(R.id.funcaoEditText).text.toString()
+        val senha = binding.(R.id.senhaEditText).text.toString()
 
         lifecycleScope.launch {
             try {
