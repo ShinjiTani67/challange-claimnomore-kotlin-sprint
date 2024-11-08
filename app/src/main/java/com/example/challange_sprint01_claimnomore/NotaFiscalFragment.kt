@@ -13,7 +13,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.lifecycleScope
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.ktx.firestore
+//import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.storage.storage
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
@@ -21,11 +21,10 @@ import java.util.UUID
 
 
 class NotaFiscalFragment : Fragment() {
-    
-    //nota fiscal faz requisição em banco de dado
+
 
     private lateinit var auth: FirebaseAuth
-    private var _biding:NotaFiscalFragment? = null
+    private var _binding:NotaFiscalFragment? = null
     private val binding get() =_binding!!
 
     private val storage = Firebase.storage
@@ -39,12 +38,10 @@ class NotaFiscalFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_dentista, container, false)
+        FragmentNotaFiscalBinding.inflate(inflater, container, false)
     }
 
     private var _binding: NotaFiscalFragment? = null
-
-
 
     private val pickImageLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK && result.data != null) {
@@ -69,12 +66,9 @@ class NotaFiscalFragment : Fragment() {
 
         lifecycleScope.launch {
             try {
-                // Faz o upload da imagem para o Firebase Storage
                 storageRef.putFile(imageUri).await()
-                // Obtém a URL de download da imagem
                 val downloadUrl = storageRef.downloadUrl.await()
 
-                // Salva a URL da imagem no Firestore
                 val photoData = hashMapOf(
                     "userId" to userId,
                     "imageUrl" to downloadUrl.toString(),
@@ -88,10 +82,9 @@ class NotaFiscalFragment : Fragment() {
             }
         }
     }
-    
+
     override fun onDestroyView() {
         super.onDestroyView()
-        _biding = null
+        _binding = null
     }
-
 }
