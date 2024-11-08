@@ -9,12 +9,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 
-
 class LoginFragment : Fragment() {
 
     private var _biding:UsuarioFragment? = null
     private val biding get() =_biding!!
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +25,6 @@ class LoginFragment : Fragment() {
 
         return inflater.inflate(R.layout.fragment_dentista, container, false)
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
