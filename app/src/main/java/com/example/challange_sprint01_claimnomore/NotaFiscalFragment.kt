@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.firebase.auth.FirebaseAuth
 
 
 class NotaFiscalFragment : Fragment() {
+    
+    //nota fiscal faz requisição em banco de dado
 
+    private lateinit var auth: FirebaseAuth
     private var _biding:NotaFiscalFragment? = null
     private val binding get() =_biding!!
 

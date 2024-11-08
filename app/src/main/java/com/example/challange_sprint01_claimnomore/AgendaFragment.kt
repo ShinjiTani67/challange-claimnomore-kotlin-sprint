@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 class AgendaFragment : Fragment() {
 
     //agenda tbm faz requisição em banco de dado
-    
+
     private lateinit var auth: FirebaseAuth
     private var _biding:AgendaFragment?= null
     private val binding get() =_biding!!
