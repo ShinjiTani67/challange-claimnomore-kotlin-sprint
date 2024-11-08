@@ -1,5 +1,6 @@
 package com.example.challange_sprint01_claimnomore
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -21,6 +22,14 @@ class UsuarioFragment : Fragment() {
     ): View? {
 
         return inflater.inflate(R.layout.fragment_dentista, container, false)
+
+    }override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.notafiscal_btn.setOnClickListener {
+            val intent = Intent(requireContext(), NotaFiscalFragment::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {
