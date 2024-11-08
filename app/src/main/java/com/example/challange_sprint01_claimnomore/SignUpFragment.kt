@@ -39,9 +39,12 @@ class SignUpFragment : Fragment() {
     }
 
     private fun createAccount() {
-        val nome = binding.editTextName.text.toString()
-        val email = binding.editTextEmailAddress.text.toString()
-        val senha = binding.editTextPassword.text.toString()
+        val nome = binding.nome.text.toString()
+        val rg = binding.endereco.text.toString()
+        val cpf = binding.cpf.text.toString()
+        val numero = binding.numero.toString()
+        val email = binding.email.text.toString()
+        val funcao = binding.funcao.text.toString()
 
         lifecycleScope.launch {
             try {

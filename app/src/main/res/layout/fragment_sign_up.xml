@@ -53,7 +53,7 @@
         tools:layout_conversion_absoluteWidth="341dp" />
 
     <EditText
-        android:id="@+id/rg"
+        android:id="@+id/endereco"
         android:layout_width="341dp"
         android:layout_height="41dp"
         android:layout_marginTop="460dp"
@@ -100,11 +100,27 @@
         tools:layout_conversion_absoluteHeight="41dp"
         tools:layout_conversion_absoluteWidth="341dp" />
 
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/rounded_conner"
+        android:fontFamily="@font/jost"
+        android:hint="@string/email_button_text"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="41dp"
+        tools:layout_conversion_absoluteWidth="341dp" />
+
     <Button
         android:id="@+id/EntrarBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="560dp"
+        android:layout_marginTop="592dp"
         android:text="@string/entrar_button_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
