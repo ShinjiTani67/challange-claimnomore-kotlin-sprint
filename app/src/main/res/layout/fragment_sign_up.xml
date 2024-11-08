@@ -39,7 +39,7 @@
     <EditText
         android:id="@+id/cpfEditText"
         android:layout_width="341dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="280dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
@@ -55,7 +55,7 @@
     <EditText
         android:id="@+id/enderecoEditText"
         android:layout_width="341dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="480dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
@@ -71,7 +71,7 @@
     <EditText
         android:id="@+id/numeroEditText"
         android:layout_width="341dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="412dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
@@ -87,7 +87,7 @@
     <EditText
         android:id="@+id/funcaoEditText"
         android:layout_width="341dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="344dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
@@ -103,7 +103,7 @@
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="341dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="148dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"
@@ -119,7 +119,7 @@
     <EditText
         android:id="@+id/senhaEditText"
         android:layout_width="341dp"
-        android:layout_height="41dp"
+        android:layout_height="48dp"
         android:layout_marginTop="548dp"
         android:background="@drawable/rounded_conner"
         android:fontFamily="@font/jost"

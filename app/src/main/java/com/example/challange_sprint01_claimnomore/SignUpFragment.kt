@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.example.challange_sprint01_claimnomore.databinding.FragmentSignUpBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -20,8 +19,8 @@ import kotlinx.coroutines.tasks.await
 class SignUpFragment : Fragment() {
 
     private lateinit var auth: FirebaseAuth
-    private var _biding: SignUpFragment? = null
-    private val binding get() = _biding!!
+    private var _binding: SignUpFragment? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -38,17 +37,17 @@ class SignUpFragment : Fragment() {
 
     private fun createAccount() {
 
-        val nome = binding.(R.id.nomeEditText).text.toString()
-        val rg = binding.(R.id.enderecoEditText).text.toString()
-        val cpf = binding.(R.id.cpfEditText).text.toString()
-        val numero = binding.(R.id.numeroEditText).toString()
-        val email = binding.(R.id.emailEditText).text.toString()
-        val funcao = binding.(R.id.funcaoEditText).text.toString()
-        val senha = binding.(R.id.senhaEditText).text.toString()
+        val nome = binding.nomeEditText.text.toString()
+        val rg = binding.enderecoEditText.text.toString()
+        val cpf = binding.cpfEditText.text.toString()
+        val numero = binding.numeroEditText.toString()
+        val email = binding.emailEditText.text.toString()
+        val funcao = binding.funcaoEditText.text.toString()
+        val senha = binding.senhaEditText.text.toString()
 
         lifecycleScope.launch {
             try {
-                val result = auth.createUserWithEmailAndPassword(email, rg, cpf, numero, funcao, senha).await()
+                val result = auth.createUserWithEmailAndPassword(email, senha).await()
                 val currentUser = result.user
 
                 if (currentUser != null) {
@@ -76,6 +75,6 @@ class SignUpFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _biding = null
+        _binding = null
     }
 }
