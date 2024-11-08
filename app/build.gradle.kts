@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "br.com.fiap.mad.marsrealestate"
+    namespace = "com.example.challange_sprint01_claimnomore"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "br.com.fiap.mad.marsrealestate"
+        applicationId = "com.example.challange_sprint01_claimnomore"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

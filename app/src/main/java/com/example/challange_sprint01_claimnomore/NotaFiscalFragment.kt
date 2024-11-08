@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
+
 class NotaFiscalFragment : Fragment() {
 
     private var _biding:NotaFiscalFragment? = null
