@@ -39,17 +39,18 @@ class SignUpFragment : Fragment() {
     }
 
     private fun createAccount() {
-        val nome = binding.nome.text.toString()
-        val rg = binding.endereco.text.toString()
-        val cpf = binding.cpf.text.toString()
-        val numero = binding.numero.toString()
-        val email = binding.email.text.toString()
-        val funcao = binding.funcao.text.toString()
-        val senha = binding.senha.text.toString()
+        
+        val nome = binding.nomeEditText.text.toString()
+        val rg = binding.enderecoEditText.text.toString()
+        val cpf = binding.cpfEditText.text.toString()
+        val numero = binding.numeroEditText.toString()
+        val email = binding.emailEditText.text.toString()
+        val funcao = binding.funcaoEditText.text.toString()
+        val senha = binding.senhaEditText.text.toString()
 
         lifecycleScope.launch {
             try {
-                val result = auth.createUserWithEmailAndPassword(email, senha).await()
+                val result = auth.createUserWithEmailAndPassword(email, rg, cpf, numero, funcao, senha).await()
                 val currentUser = result.user
 
                 if (currentUser != null) {
@@ -57,7 +58,7 @@ class SignUpFragment : Fragment() {
                         displayName = nome
                     }
                     currentUser.updateProfile(profileRequest).await()
-                    findNavController().navigate(R.id.homeFragment)
+                    findNavController().navigate(R.id.usuario)
                 } else {
                     Toast.makeText(
                         requireContext(),
