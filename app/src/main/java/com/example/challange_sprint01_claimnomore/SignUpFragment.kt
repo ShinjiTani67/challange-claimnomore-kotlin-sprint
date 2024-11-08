@@ -5,15 +5,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 
 
 class SignUpFragment : Fragment() {
 
+    private lateinit var auth: FirebaseAuth
     private var _biding: SignUpFragment? = null
     private val biding get() = _biding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+    auth = Firebase.auth
 }
 
     override fun onCreateView(

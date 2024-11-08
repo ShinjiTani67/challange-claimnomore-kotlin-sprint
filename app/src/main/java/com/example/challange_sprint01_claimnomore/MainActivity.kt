@@ -5,13 +5,17 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 
 class MainActivity :  AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
 
         val usuarioEditText = findViewById<EditText>(R.id.usuario)
         val senhaEditText = findViewById<EditText>(R.id.senha)
