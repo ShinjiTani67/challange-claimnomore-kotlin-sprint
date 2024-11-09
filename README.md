@@ -14,7 +14,9 @@
 
 ## Descrição
 O projeto planeja fazer um sistema de verificação de sinistro. Com dois tipos de contas, uma para funcionários da empresa de odonto e outra para dentistas.
-a verificação será feita pela postagem de Notas fiscais
+a verificação será feita pela postagem de Notas fiscais.
+O sistema terá diferentes funcionalidades para cada tipo de login. Os dentitas podem realizar funções admistrativas do seu tempo como verificar agendamentos e 
+as contas de usuários servem para exclusivamente para a verificação de sinistros 
 
 - //pegar no READ ME da sprint de java
 
